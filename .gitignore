@@ -1,0 +1,8 @@
+# Ignore Excel temporary files
+~$*
+
+# Ignore other common files
+*.log
+*.tmp
+*.bak
+*.swp
