@@ -42,6 +42,21 @@ WHERE track_id IN (
 );
 SET SQL_SAFE_UPDATES = 1;
 
+-- Delete rows where columns are 0
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM tracks
+WHERE tempo = 0;
+DELETE FROM tracks
+WHERE duration_ms = 0;
+DELETE FROM tracks
+WHERE popularity = 0;
+SET SQL_SAFE_UPDATES = 1;
+
+SELECT *
+FROM tracks
+ORDER BY popularity
+
+
 
 
 
