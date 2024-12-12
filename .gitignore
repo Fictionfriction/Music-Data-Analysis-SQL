@@ -6,3 +6,6 @@
 *.tmp
 *.bak
 *.swp
+
+# Ignore venv
+venv/
